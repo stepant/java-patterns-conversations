@@ -1,4 +1,4 @@
-package javapatterns;
+package org.simplebuilder.pattern;
 
 public class SimpleBuilderPattern {
 

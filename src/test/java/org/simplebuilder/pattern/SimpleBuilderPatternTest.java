@@ -1,10 +1,13 @@
-package javapatterns;
+package org.simplebuilder.pattern;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
+import org.simplebuilder.pattern.Car;
+import org.simplebuilder.pattern.CarBuilder;
+import org.simplebuilder.pattern.Transmission;
 
 class SimpleBuilderPatternTest {
 
@@ -21,7 +24,7 @@ class SimpleBuilderPatternTest {
 		assertThat(toyota, instanceOf(Car.class));
 		assertEquals(toyota.getMake(), "Toyota");
 		assertEquals(toyota.getMaxSpeed(), 250);
-		assertEquals(Transmission.AUTO, Transmission.AUTO);
+		assertEquals(toyota.getTransmission(), Transmission.AUTO);
 	}
 
 }
